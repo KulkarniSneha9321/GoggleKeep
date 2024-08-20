@@ -34,7 +34,7 @@ import {MatIconModule} from '@angular/material/icon';
     NotecardComponent,
     NotesContainerComponent,
     RegisterComponent,
-    TrashContainerComponent
+    TrashContainerComponent,
   ],
   imports: [
     BrowserModule,

@@ -9,7 +9,8 @@ describe('AddnotesComponent', () => {
   beforeEach(() => {
     TestBed.configureTestingModule({
       declarations: [AddnotesComponent]
-    });
+    })
+    .compileComponents();
     fixture = TestBed.createComponent(AddnotesComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();

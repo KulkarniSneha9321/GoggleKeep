@@ -9,7 +9,8 @@ describe('TrashContainerComponent', () => {
   beforeEach(() => {
     TestBed.configureTestingModule({
       declarations: [TrashContainerComponent]
-    });
+    })
+    .compileComponents();
     fixture = TestBed.createComponent(TrashContainerComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();

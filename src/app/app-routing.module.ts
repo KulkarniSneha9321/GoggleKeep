@@ -10,7 +10,7 @@ import { TrashContainerComponent } from './trash-container/trash-container.compo
 
 const routes: Routes = [
   {
-    path:'login',
+    path:'',
     component:LoginComponent,
   },{
     path:'register',
@@ -22,6 +22,11 @@ const routes: Routes = [
     path:'dashboard',
     component:DashboardComponent,
     children:[
+      {
+        path:'',
+        pathMatch:'prefix',
+        redirectTo:'notes',
+      },
       {
         path:'notes',
         component:NotesContainerComponent,

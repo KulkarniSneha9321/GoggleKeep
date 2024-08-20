@@ -9,7 +9,8 @@ describe('ArchieveContainerComponent', () => {
   beforeEach(() => {
     TestBed.configureTestingModule({
       declarations: [ArchieveContainerComponent]
-    });
+    })
+    .compileComponents();
     fixture = TestBed.createComponent(ArchieveContainerComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
