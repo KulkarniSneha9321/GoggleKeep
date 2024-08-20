@@ -1,5 +1,5 @@
-body{
-    font-family: Arial,sans-serif;
+body {
+    font-family: Arial, sans-serif;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -7,46 +7,61 @@ body{
     margin: 0;
     background-color: #f0f0f0;
 }
-.register-container{
+
+.register-container {
     display: flex;
     flex-direction: row;
     border: 1px solid black;
     background-color: #fff;
     margin-top: 7%;
     margin-left: 18%;
+    margin-right: 18%;
     padding: 3%;
     border-radius: 8px;
     padding-bottom: 2%;
-    box-shadow: 0 0 10px rgb(201,184,184,0.1);
+    box-shadow: 0 0 10px rgba(201, 184, 184, 0.1);
     text-align: left;
 }
-.register-container-main-password{
+
+.register-container-main {
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+}
+
+.register-container-main-name {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
 }
-.register-container-main-name{
+
+.register-container-main-password {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
 }
-.register-container-main-button{
+
+.register-container-main-button {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     padding-top: 6%;
 }
-.register-container-picture{
+
+.register-container-picture {
     width: 40%;
     margin-left: 5%;
     text-align: center;
 }
-.register-container-main-sign-in-instead{
+
+.register-container-main-sign-in-instead {
     background: none;
-    color: rgba(61,61,210,0.82);
+    color: rgba(61, 61, 210, 0.82);
     border: none;
 }
-.footer-links{
+
+
+.footer-links {
     display: flex;
     flex-direction: row;
     margin-top: 20px;
@@ -56,56 +71,84 @@ body{
     justify-content: space-between;
     font-size: 1.0em;
 }
-#language-select{
+
+#language-select {
     background: none;
     border: none;
-    color: rgb(78,64,64);
+    color: rgb(78, 64, 64);
 }
-.login-normal-button2{
+
+.login-normal-button2 {
     background: none;
-    color: rgb(29,29,33);
+    color: rgb(29, 29, 33);
     border: none;
 }
-.register-container-main-password11,.register-container-main-password12{
+
+.register-container-main-password11,
+.register-container-main-password12 {
     width: 47%;
 }
-@media(min-width:350px) and (max-width:950px){
-    .register-container{
+
+.register-container-main-name1 {
+    width: 47%;
+}
+
+@media(min-width:350px) and (max-width:950px) {
+
+    .register-container {
         justify-content: center;
     }
-    .register-container-main-name{
+
+    .register-container-main-name {
         display: flex;
         flex-direction: column;
     }
-    .register-container-main-name1{
+
+    .register-container-main-name1 {
         width: 100%;
     }
-    .register-container-picture{
+
+    .register-container-picture {
         display: none;
     }
-    .register-container-main-username{
+
+    .register-container-main-username {
         width: 100%;
     }
-    .register-container-main-password{
+
+    .register-container-main-password {
         display: flex;
         flex-direction: column;
     }
-    .register-container-main-password11{
+
+    .register-container-main-password11 {
         width: 100%;
         padding-bottom: 4%;
     }
-    .register-container-main-password12{
+
+    .register-container-main-password12 {
         width: 100%;
     }
-    .register-container-main-username{
+
+    .register-container-main-username {
         padding-bottom: 4%;
     }
-    .footer-links2{
+
+    .footer-links {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .footer-links2 {
         margin-right: 6%;
     }
 }
-@media(min-width:951px) and (max-width:1100px){
-    .register-container-picture{
+
+@media(min-width:951px) and (max-width:1100px) {
+
+    .register-container-picture {
         display: none;
     }
+
 }

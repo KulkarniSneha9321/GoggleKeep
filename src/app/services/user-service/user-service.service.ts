@@ -7,7 +7,7 @@ import { HttpServiceService } from '../http-service/http-service.service';
 export class UserServiceService {
 
   constructor(private httpService:HttpServiceService) { }
-  loginApiCall(data:string){
+  loginApiCall(data:any){
     return this.httpService.postAPIcall('/user/login',data);
   }
   registerApiCall(data:any){

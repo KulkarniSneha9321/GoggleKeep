@@ -1,14 +1,25 @@
 import { Component, OnInit } from '@angular/core';
-import { REFRESH_ICON,SETTING_ICON,MENU_ICON,IMG_ICON,COLOR_PALATTE_ICON,LIST_VIEW_ICON,OTHER_MENU_ICON,SEARCH_ICON,MORE_ICON,MENU_ICON1 } from 'src/assets/svg.icons';
+import {
+  REFRESH_ICON,
+  SETTING_ICON,
+  MENU_ICON,
+  IMG_ICON,
+  COLOR_PALATTE_ICON,
+  LIST_VIEW_ICON,
+  OTHER_MENU_ICON,
+  SEARCH_ICON,
+  MORE_ICON,
+  MENU_ICON1
+} from '../../assets/svg.icons';
 import { MatIconRegistry } from '@angular/material/icon';
 import { DomSanitizer } from '@angular/platform-browser';
 @Component({
   selector: 'app-header',
   templateUrl: './header.component.html',
-  styleUrls: ['./header.component.scss']
+  styleUrls: ['./header.component.scss'],
 })
-export class HeaderComponent implements OnInit{
-  constructor(iconRegistry:MatIconRegistry, sanitizer:DomSanitizer){
+export class HeaderComponent implements OnInit {
+  constructor(iconRegistry: MatIconRegistry, sanitizer: DomSanitizer) {
     iconRegistry.addSvgIconLiteral(
       'refresh-icon',
       sanitizer.bypassSecurityTrustHtml(REFRESH_ICON)
@@ -39,20 +50,17 @@ export class HeaderComponent implements OnInit{
     );
     iconRegistry.addSvgIconLiteral(
       'search-icon',
-      sanitizer.bypassSecurityTrustHtml(OTHER_MENU_ICON)
+      sanitizer.bypassSecurityTrustHtml(SEARCH_ICON)
     );
     iconRegistry.addSvgIconLiteral(
       'more-icon',
-      sanitizer.bypassSecurityTrustHtml(MENU_ICON)
+      sanitizer.bypassSecurityTrustHtml(MORE_ICON)
     );
     iconRegistry.addSvgIconLiteral(
       'menu-icon1',
       sanitizer.bypassSecurityTrustHtml(MENU_ICON1)
     );
-
-  }
-  ngOnInit(): void {
-    
   }
 
+  ngOnInit(): void {}
 }

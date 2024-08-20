@@ -19,5 +19,6 @@ export class TrashContainerComponent implements OnInit{
       error:(e)=>{},
     });
   }
+  
 
 }

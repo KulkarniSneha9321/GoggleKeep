@@ -9,7 +9,7 @@ import { NOTE_ICON1,CHECKBOX,IMAGE,BRUSH_ICON} from 'src/assets/svg.icons';
   styleUrls: ['./dashboard.component.scss']
 })
 export class DashboardComponent implements OnInit{
-  noteIcon1 = NOTE_ICON1;
+  noteIcon1 = NOTE_ICON1; 
   checkbox = CHECKBOX;
   image = IMAGE;
 

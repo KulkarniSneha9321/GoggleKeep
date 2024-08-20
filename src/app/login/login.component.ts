@@ -32,7 +32,7 @@ export class LoginComponent implements OnInit {
     if (this.loginForm.invalid) return;
     const { email, password } = this.loginForm.value;
     console.log(email, password);
-    this.userService.loginApiCall({ email, password }).subscribe({
+    this.userService.loginApiCall({ email, password} ).subscribe({
       next: (res: any) => {
         const { id } = res;
         console.log('response', id);
