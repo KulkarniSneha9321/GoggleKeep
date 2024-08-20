@@ -1,4 +1,4 @@
-.addnoteinputbox{
+.addnoteinputbox {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -8,46 +8,73 @@
     background-color: white;
     border-radius: 8px;
     border: 1px solid grayscale($color: #bcb7b7);
+    box-shadow: 5px 5px 5px rgb(91, 92, 101);
 }
-.addnoteinputboxtext{
+
+.addnoteinputboxtext {
     width: 360px;
+    
 }
-.addnoteinputboxtextinput{
-    &:focus-visible{
+
+.addnoteinputboxtextinput {
+    &:focus-visible {
         outline: none;
-    };
+    }
+
+    ;
 }
-.addnoteinputboxicons{
+
+.addnoteinputboxicons {
     display: flex;
     flex-direction: row;
+    justify-content: space-around;
+    width: 24%;
+    margin-top: 6px;
+}
+
+.notecard {
+    display: flex;
+    flex-direction: column;
     background-color: white;
     align-items: left;
     height: 100px;
     width: 350px;
     margin-bottom: 30px;
     padding: 2%;
-    //width:100%;
+    // width:100%;
     border: 1px solid gray;
     border-radius: 1rem;
 }
-.notecard-icons{
+
+.notecard-content {
+    display: flex;
+    flex-direction: column;
+    background-color: whitesmoke;
+}
+
+.notecard-icons {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     padding-top: 10%;
 }
-.notecard-content-input{
+
+.notecard-content-input {
     background-color: whitesmoke;
     border: none;
-    &:focus-visible{
+
+    &:focus-visible {
         outline: none;
     };
 }
-.notecard-content-icon{
+
+.notecard-content-icon {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
 }
-.addnoteinputboxdetails{
+
+.addnoteinputboxdetails {
     width: 100%;
+
 }
