@@ -9,7 +9,8 @@ describe('NotesContainerComponent', () => {
   beforeEach(() => {
     TestBed.configureTestingModule({
       declarations: [NotesContainerComponent]
-    });
+    })
+    .compileComponents();
     fixture = TestBed.createComponent(NotesContainerComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
