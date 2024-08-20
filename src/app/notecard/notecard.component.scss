@@ -1,0 +1,25 @@
+.notecard {
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(236, 236, 236);
+    margin-left: 2%;
+    align-items: left;
+    height: auto;
+    width: 250px;
+    margin-bottom: 30px;
+    padding: 8%;
+    border-radius: 1rem;
+    box-shadow: 5px 5px 5px rgb(81, 81, 82);
+}
+
+.notecard-content {
+    display: flex;
+    flex-direction: column;
+}
+
+.notecard-icons {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding-top: 10%;
+}
