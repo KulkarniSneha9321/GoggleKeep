@@ -19,4 +19,11 @@ export class NotesService {
       data
     );
   }
+  noteIconsApiCall(data: any, endpoint: string) {
+    return this.httpService.postAPIcall(
+      `/notes${endpoint}?access_token=${this.access_token}`,
+      data
+    );
+  }
+
 }
