@@ -35,7 +35,7 @@
 .notecard {
     display: flex;
     flex-direction: column;
-    background-color: white;
+    background-color: whitesmoke;
     align-items: left;
     height: 100px;
     width: 350px;
@@ -49,7 +49,7 @@
 .notecard-content {
     display: flex;
     flex-direction: column;
-    background-color: whitesmoke;
+    background-color: wheat;
 }
 
 .notecard-icons {
@@ -60,7 +60,7 @@
 }
 
 .notecard-content-input {
-    background-color: whitesmoke;
+    background-color: wheat;
     border: none;
 
     &:focus-visible {
