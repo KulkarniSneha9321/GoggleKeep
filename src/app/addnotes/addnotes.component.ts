@@ -1,24 +1,30 @@
+import { NotesService } from '../services/notes-service/notes-service.service';
 import { Component, OnInit } from '@angular/core';
-import{IMG_ICON,BRUSH_ICON,TICK_ICON,PIN_ICON,UNDO_ICON,REDO_ICON} from'../../assets/svg.icons';
-import { FormGroup,FormBuilder } from '@angular/forms';
+import { FormGroup, FormBuilder } from '@angular/forms';
+import {
+  IMG_ICON,
+  BRUSH_ICON,
+  TICK_ICON,
+  PIN_ICON,
+  UNDO_ICON,
+  REDO_ICON,
+} from '../../assets/svg.icons';
 import { MatIconRegistry } from '@angular/material/icon';
 import { DomSanitizer } from '@angular/platform-browser';
-import { NotesServiceService } from '../services/notes-service/notes-service.service';
 import { add } from 'winston';
-import { log } from 'winston';
-
+import { log } from 'console';
 @Component({
   selector: 'app-addnotes',
-  templateUrl: './addnotes.component.html',
-  styleUrls: ['./addnotes.component.scss']
+  templateUrl:'./addnotes.component.html',
+  styleUrls: ['./addnotes.component.scss'],
 })
-export class AddnotesComponent implements OnInit {
+export class AddnoteComponent implements OnInit {
   notesform!: FormGroup;
   constructor(
     iconRegistry: MatIconRegistry,
     sanitizer: DomSanitizer,
     private fb: FormBuilder,
-    private notesService: NotesServiceService
+    private notesService: NotesService
   ) {
     iconRegistry.addSvgIconLiteral(
       'img-icon',

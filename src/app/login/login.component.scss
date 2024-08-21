@@ -1,4 +1,4 @@
-body{
+body {
     font-family: Arial, sans-serif;
     display: flex;
     justify-content: center;
@@ -7,7 +7,8 @@ body{
     margin: 0;
     background-color: #f0f0f0;
 }
-.login-container{
+
+.login-container {
     border: 1px solid black;
     background-color: #fff;
     margin-top: 7%;
@@ -16,11 +17,11 @@ body{
     padding: 3%;
     border-radius: 8px;
     padding-bottom: 2%;
-    box-shadow: 0 0 10px rgb(0, 0,0,0.1);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     text-align: center;
-
 }
-.footer-links{
+
+.footer-links {
     display: flex;
     flex-direction: row;
     margin-top: 20px;
@@ -29,11 +30,13 @@ body{
     justify-content: space-between;
     font-size: 0.9em;
 }
-#language-select{
+
+#language-select {
     background: none;
     border: none;
-    color: rgb(78,64,64);
+    color: rgb(78, 64, 64);
 }
+
 // .footer-links a {
 //     margin: 0 10px;
 //     color: #007BFF;
@@ -42,42 +45,61 @@ body{
 // .footer-links a:hover {
 //     text-decoration: underline;
 // }
+.login-createaccount-login {
 
-.login-createaccount-login{
     display: flex;
     flex-direction: row;
     justify-content: space-between;
 }
-.login-normal-button{
+
+.login-normal-button {
     background: none;
-    color: rgb(21,21,162);
+    color: rgb(21, 21, 162);
+    border: none;
+    width: 32%;
+    margin-right: 68%;
+    margin-bottom: 7%;
+    padding: 0%;
+    text-align: left;
+}
+
+.login-normal-button1 {
+    background: none;
+    color: rgb(21, 21, 162);
     border: none;
     width: 32%;
     padding: 0%;
     text-align: left;
 }
-.login-normal-button2{
+
+.login-normal-button2 {
     background: none;
-    color: rgb(29,29,33);
-    border: none;
-}
-.footer-links1{
-    background: none;
+    color: rgb(29, 29, 33);
     border: none;
 }
 
-@media (min-width:350px) and (max-width:950px){
-    .login-container{
+.footer-links1 {
+
+    background: none;
+    border: none;
+
+}
+
+
+@media (min-width:350px) and (max-width:950px) {
+    .login-container {
         width: 100%;
         margin-left: 0%;
         margin-right: 0%;
     }
-    .footer-links{
+
+    .footer-links {
         display: flex;
         flex-direction: column;
         align-items: center;
     }
-    .footer-links2{
+
+    .footer-links2 {
         margin-right: 6%;
     }
 }

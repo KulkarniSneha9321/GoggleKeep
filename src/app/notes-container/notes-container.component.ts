@@ -1,16 +1,16 @@
-import { Component,OnInit} from '@angular/core';
-// import { HttpServiceService } from '../services/http-service/http-service.service';
-import { NotesServiceService } from '../services/notes-service/notes-service.service';
+import { Component, OnInit } from '@angular/core';
+import { HttpService } from '../services/http-service/http-service.service';
+import { NotesService } from '../services/notes-service/notes-service.service';
 
 @Component({
   selector: 'app-notes-container',
   templateUrl: './notes-container.component.html',
-  styleUrls: ['./notes-container.component.scss']
+  styleUrls: ['./notes-container.component.scss'],
 })
 export class NotesContainerComponent implements OnInit {
   notesList: any = [];
 
-  constructor(private notesService: NotesServiceService) {}
+  constructor(private notesService: NotesService) {}
 
   ngOnInit(): void {
     this.notesService.getAllNotesApiCall("getNotesList").subscribe({

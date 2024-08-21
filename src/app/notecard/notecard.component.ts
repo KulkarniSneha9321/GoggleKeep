@@ -1,4 +1,4 @@
-import { Component,OnInit,Input,Output } from '@angular/core';
+import { Component, OnInit, Input, Output } from '@angular/core';
 import {
   REMINDER_ICON,
   COLLABRATOR_ICON,
@@ -13,15 +13,15 @@ import {
 } from '../../assets/svg.icons';
 import { MatIconRegistry } from '@angular/material/icon';
 import { DomSanitizer } from '@angular/platform-browser';
-// import { EventEmitter } from 'stream';
-
+import { EventEmitter } from 'stream';
 @Component({
   selector: 'app-notecard',
   templateUrl: './notecard.component.html',
-  styleUrls: ['./notecard.component.scss']
+  styleUrls: ['./notecard.component.scss'],
 })
 export class NotecardComponent implements OnInit {
   @Input() noteDetails: any;
+  //  @Output() sendDataToParent=new EventEmitter();
   constructor(iconRegistry: MatIconRegistry, sanitizer: DomSanitizer) {
     iconRegistry.addSvgIconLiteral(
       'reminder-icon',
@@ -67,5 +67,6 @@ export class NotecardComponent implements OnInit {
   ngOnInit(): void {}
 
   handleDelete() {
+    
   }
 }

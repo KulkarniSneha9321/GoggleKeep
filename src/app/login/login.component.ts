@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { FormBuilder, FormGroup, Validators } from '@angular/forms';
 import { Router } from '@angular/router';
-import { UserServiceService } from '../services/user-service/user-service.service';
+import { UserService } from '../services/user-service/user-service.service';
 @Component({
   selector: 'app-login',
   templateUrl: './login.component.html',
@@ -12,7 +12,7 @@ export class LoginComponent implements OnInit {
   constructor(
     private formBuilder: FormBuilder,
     private route: Router,
-    private userService: UserServiceService
+    private userService: UserService
   ) {}
 
   ngOnInit(): void {
@@ -29,10 +29,11 @@ export class LoginComponent implements OnInit {
     return this.loginForm.controls;
   }
   handleLogin() {
+    // console.log("inside handleLogin");
     if (this.loginForm.invalid) return;
     const { email, password } = this.loginForm.value;
     console.log(email, password);
-    this.userService.loginApiCall({ email, password} ).subscribe({
+    this.userService.loginApiCall({ email, password }).subscribe({
       next: (res: any) => {
         const { id } = res;
         console.log('response', id);

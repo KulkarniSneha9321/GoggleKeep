@@ -4,7 +4,7 @@ import { BrowserModule } from '@angular/platform-browser';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
-import { AddnotesComponent } from './addnotes/addnotes.component';
+import { AddnoteComponent } from './addnotes/addnotes.component';
 import { ArchieveContainerComponent } from './archieve-container/archieve-container.component';
 import { DashboardComponent } from './dashboard/dashboard.component';
 import { HeaderComponent } from './header/header.component';
@@ -21,20 +21,25 @@ import { FormsModule,ReactiveFormsModule } from '@angular/forms';
 import {MatCardModule} from '@angular/material/card';
 import {HttpClientModule} from '@angular/common/http';
 import {MatIconModule} from '@angular/material/icon';
+import { SearchPipe } from './pipes/search.pipe';
 
 @NgModule({
   declarations: [
     AppComponent,
-    AddnotesComponent,
-    ArchieveContainerComponent,
     DashboardComponent,
-    HeaderComponent,
-    LoginComponent,
     NavbarComponent,
     NotecardComponent,
-    NotesContainerComponent,
     RegisterComponent,
     TrashContainerComponent,
+    SearchPipe,
+    NotecardComponent,
+    NotesContainerComponent,
+    AddnoteComponent,
+    ArchieveContainerComponent,
+    HeaderComponent,
+    LoginComponent,
+    AddnoteComponent,
+
   ],
   imports: [
     BrowserModule,

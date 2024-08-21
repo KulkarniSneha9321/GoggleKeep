@@ -1,8 +1,7 @@
-
 import { Component, OnInit } from '@angular/core';
 import { FormBuilder, FormGroup, Validators } from '@angular/forms';
 import { Router } from '@angular/router';
-import { UserServiceService } from '../services/user-service/user-service.service';
+import { UserService } from '../services/user-service/user-service.service';
 @Component({
   selector: 'app-register',
   templateUrl: './register.component.html',
@@ -13,7 +12,7 @@ export class RegisterComponent implements OnInit {
   constructor(
     private formBuilder: FormBuilder,
     private route: Router,
-    private userService: UserServiceService
+    private userService: UserService
   ) {}
 
   ngOnInit(): void {

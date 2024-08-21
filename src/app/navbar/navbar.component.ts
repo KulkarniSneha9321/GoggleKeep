@@ -1,4 +1,4 @@
-import { Component,OnInit } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 import {
   REMINDER_ICON,
   COLLABRATOR_ICON,
@@ -8,16 +8,18 @@ import {
   MORE_ICON,
   DELETE_FOREVER_ICON,
   RESTORE_ICON,
+  UNARCHIVE_ICON,
   EDIT_ICON,
   TRASH_ICON,
   NOTE_ICON,
 } from '../../assets/svg.icons';
 import { MatIconRegistry } from '@angular/material/icon';
 import { DomSanitizer } from '@angular/platform-browser';
+
 @Component({
   selector: 'app-navbar',
   templateUrl: './navbar.component.html',
-  styleUrls: ['./navbar.component.scss']
+  styleUrls: ['./navbar.component.scss'],
 })
 export class NavbarComponent implements OnInit {
   constructor(iconRegistry: MatIconRegistry, sanitizer: DomSanitizer) {

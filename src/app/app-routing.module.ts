@@ -8,34 +8,39 @@ import { NotesContainerComponent } from './notes-container/notes-container.compo
 import { ArchieveContainerComponent } from './archieve-container/archieve-container.component';
 import { TrashContainerComponent } from './trash-container/trash-container.component';
 
-const routes: Routes = [
+const routes: Routes = [ 
   {
-    path:'',
-    component:LoginComponent,
-  },{
-    path:'register',
-    component:RegisterComponent,
-  },{
-    path:'notecard',
-    component:NotecardComponent,
-  },{
-    path:'dashboard',
-    component:DashboardComponent,
-    children:[
+    path: '',
+    component: LoginComponent,
+  },
+  {
+    path: 'register',
+    component: RegisterComponent,
+  },
+  {
+    path: 'notecard',
+    component: NotecardComponent,
+  },
+  {
+    path: 'dashboard',
+    component: DashboardComponent,
+    children: [
       {
-        path:'',
-        pathMatch:'prefix',
-        redirectTo:'notes',
+        path: '',
+        pathMatch: 'prefix',
+        redirectTo: 'notes',
       },
       {
-        path:'notes',
-        component:NotesContainerComponent,
-      },{
-        path:'archieve',
-        component:ArchieveContainerComponent,
-      },{
-        path:'trash',
-        component:TrashContainerComponent,
+        path: 'notes',
+        component: NotesContainerComponent,
+      },
+      {
+        path: 'archieve',
+        component: ArchieveContainerComponent,
+      },
+      {
+        path: 'trash',
+        component: TrashContainerComponent,
       },
     ],
   },
@@ -43,6 +48,6 @@ const routes: Routes = [
 
 @NgModule({
   imports: [RouterModule.forRoot(routes)],
-  exports: [RouterModule]
+  exports: [RouterModule],
 })
-export class AppRoutingModule { }
+export class AppRoutingModule {}

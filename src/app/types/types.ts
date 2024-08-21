@@ -1,15 +1,16 @@
-export interface NoteObj{
+export interface NoteObj {
     id?: string;
-    title?:string;
+    title?: string;
     description?: string;
-    isArchived?:boolean;
-    isDeleted?:boolean;
-    color?:string;
-}
-
-export interface IconsPayloadData{
+    isArchived?: boolean;
+    isDeleted?: boolean;
+    color?: string;
+  }
+  
+  export interface IconsPayloadData {
     noteIdList?: string[];
     isArchived?: boolean;
-    isDeleted?:boolean;
+    isDeleted?: boolean;
     color?: string;
-}
+  }
+  

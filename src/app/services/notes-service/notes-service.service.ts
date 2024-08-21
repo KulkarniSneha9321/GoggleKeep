@@ -1,19 +1,18 @@
 import { Injectable } from '@angular/core';
-import { HttpServiceService } from '../http-service/http-service.service';
+import { HttpService } from '../http-service/http-service.service';
 
 @Injectable({
-  providedIn: 'root'
+  providedIn: 'root',
 })
-export class NotesServiceService {
-
-  constructor(private httpService:HttpServiceService) { }
+export class NotesService {
+  constructor(private httpService: HttpService) {}
   access_token = localStorage.getItem('access_token');
-  // baseUrl= 'https://fundoonotes.incubation.bridgelabz.com/api'
-  getAllNotesApiCall(data:string){
+  getAllNotesApiCall(endpoint: string) {
     return this.httpService.getAPICall(
-      `/notes/getNotesList?access_token=${this.access_token}`
+      `/notes/${endpoint}?access_token=${this.access_token}`
     );
   }
+
   addNotesApiCall(url:any, data: any) {
     return this.httpService.postAPIcall(
       `${url}?access_token=${this.access_token}`,
